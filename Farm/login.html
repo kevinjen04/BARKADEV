@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 900px;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.878);
+    }
+
+    .left-side {
+      flex: 2;
+      padding: 10px;
+    }
+
+    .right-side {
+      flex: 1;
+      background: #1c471b;
+      border-radius: 16px;
+      padding: 40px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    h1 span {
+      color: #1c471b;      ;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .input-group {
+      margin-bottom: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #f0f0f0;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .sign-up-btn {
+      width: 100%;
+      padding: 12px;
+      background: #1c471b;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+      color: #666;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #671616;
+    }
+
+    .divider span {
+      padding: 0 10px;
+    }
+
+    .google-btn {
+      width: 100%;
+      padding: 12px;
+      background: #f0f0f0;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .login-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+
+    .login-text a {
+      color: #1c471b;      ;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #farm-logo {
+      width: 300px;
+      height: 200px;
+      margin: 0 auto;
+    }
+
+    .tagline {
+      font-size: 24px;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    #google-icon {
+      width: 24px;
+      height: 24px;
+    }
+    span {
+      color: #1c471b;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <p class="subtitle">Welcome to <span>The Farm</span>. Log in to cultivate your next success.</p>
+      
+      <div class="input-group">
+        <input type="email" placeholder="username">
+        <input type="password" placeholder="password">
+      </div>
+
+      <button class="sign-up-btn">Sign Up</button>
+
+      <div class="divider">
+        <span>or</span>
+      </div>
+
+      <button class="google-btn">
+        <img id="google-icon" src="/imgs/search.png" alt="Google icon" style="margin-right: 8px;">
+        Sign in with Google
+      </button>
+
+      <p class="login-text">
+        Already have an account? <a href="#">Login</a>
+      </p>
+    </div>
+
+    <div class="right-side">
+      <p class="tagline">Plant the seeds of progress and nurture them with care</p>
+      
+      <img id="farm-logo" src="/imgs/farm.png" alt="farm logo">
+    </div>
+  </div>
+</body>
+</html>
